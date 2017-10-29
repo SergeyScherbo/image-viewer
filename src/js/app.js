@@ -13,11 +13,13 @@ gallery.addEventListener('click', function(e) {
   image.setAttribute('src', imageAttr);
 
 
+  document.body.style.overflowY = 'hidden';
   shadow.classList.add('show');
   imageOuter.classList.add('show');
 
   shadow.addEventListener('click', function(e) {
     if (e.target.classList.contains('shadow')) {
+      document.body.style.overflowY = 'auto';
       e.target.classList.remove('show');
       imageOuter.classList.remove('show');
     }
