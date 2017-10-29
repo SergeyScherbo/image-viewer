@@ -31,6 +31,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -159,3 +165,13 @@ body {
 .show {
   opacity: 1 !important;
   visibility: visible !important; }
+
+.shadow__close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: .3s; }
+  .shadow__close:hover {
+    color: #fff; }

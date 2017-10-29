@@ -120,3 +120,16 @@ body {
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+.shadow__close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 1.5rem;
+  color: fade-out(#fff, .5);
+  transition: .3s;
+
+  &:hover {
+    color: #fff;
+  }
+}
